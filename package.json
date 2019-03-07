@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nightmare": "^3.0.1"
+    "nightmare": "^3.0.1",
+    "puppeteer": "^1.13.0"
   }
 }
