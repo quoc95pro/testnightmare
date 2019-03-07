@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 async function main() {
-const browser = await puppeteer.launch({headless: false});
+const browser = await puppeteer.launch({headless: false, args: ['--no-sandbox', '--disable-setuid-sandbox']});
 const page = await browser.newPage();
 // await page.setViewport({width: 1200, height: 720})
 await page.goto('https://123link.co/auth/signin', { waitUntil: 'networkidle0' }); // wait until page load
